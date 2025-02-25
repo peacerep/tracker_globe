@@ -165,8 +165,7 @@
                 .style("top", rowHeight + "px")
                 .style("left", rowWidth + "px")
                 .html(
-                    "Change from last year. <br> Last Updated: " +
-                        acled_update,
+                    "Change from last year. <br> Last Updated: " + acled_update,
                 )
                 .style("visibility", "visible");
         } else {
@@ -180,7 +179,7 @@
         }
     }
 
-    function hide_fatalities_tooltip () {
+    function hide_fatalities_tooltip() {
         d3.select("#month_tooltip").style("visibility", "hidden");
     }
 </script>
@@ -300,7 +299,7 @@
                         />
                     {/each}
                 </svg>
-                <br>
+                <br />
                 {@html selected_country_details?.peace_process_text}
             </div>
         </div>
@@ -490,24 +489,6 @@
         flex-direction: column;
         z-index: 11;
         box-shadow: 0 0 3px #000000;
-    }
-
-    @media (max-width: 1450px) {
-        .visualization {
-            width: 450px;
-        }
-    }
-
-    @media (max-width: 1200px) {
-        .visualization {
-            width: 400px;
-        }
-    }
-
-    @media (max-height: 800px) {
-        .visualization {
-            width: 400px;
-        }
     }
 
     @media (max-width: 768px) {
