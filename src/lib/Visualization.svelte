@@ -1,13 +1,10 @@
 <script>
-    import { onMount } from "svelte";
     import { createEventDispatcher } from "svelte";
     import { faArrowUp, faArrowDown } from "@fortawesome/free-solid-svg-icons";
     import * as d3 from "d3";
     import { FontAwesomeIcon } from "@fortawesome/svelte-fontawesome";
 
     const dispatch = createEventDispatcher();
-
-    //colors of the map: #1a1a1a (land) #263852 (water)
 
     export let selected_country_details;
     let details_width;
@@ -305,7 +302,6 @@
         </div>
 
         <div id="general">
-            <!-- <hr style="border: 1px solid gray; width: 400px"> -->
             <div class="scrollable-content">
                 <p
                     style="margin-bottom: 0px; margin-top: 10px; text-align: center; font-weight: 450"
@@ -559,9 +555,6 @@
         overflow-y: auto;
         font-size: 0.8em;
         margin-top: 0px;
-        /* margin-right: 2px;
-        margin-left: 2px; */
-        /* margin-bottom: 4px; */
         border-radius: 2px;
         gap: 5px;
     }
@@ -664,15 +657,6 @@
         border-radius: 2px;
     }
 
-    #overview h5,
-    #general h5,
-    #tracker h5,
-    #peace_process h5 {
-        background-color: #d9d9d9;
-        z-index: 2;
-        box-shadow: 0 2px 3px rgba(117, 117, 117, 0.8);
-    }
-
     #overview,
     #general,
     #tracker,
@@ -691,24 +675,6 @@
     #general,
     #peace_process {
         flex-grow: 3; /* Takes three units of the available space each */
-    }
-
-    h5 {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-        margin: 0;
-        padding: 5px 15px;
-        color: black;
-        font-size: 1em;
-        font-weight: 450;
-    }
-
-    @media only screen and (max-width: 768px) {
-        h5 {
-            font-size: 0.9em;
-            padding: 3px 10px;
-        }
     }
 
     h6 {
@@ -769,63 +735,6 @@
         position: relative;
         display: inline-block;
     }
-
-    /* .tooltip-container .tooltip-text {
-        visibility: hidden;
-        width: 135px;
-        background-color: black;
-        color: #fff;
-        text-align: center;
-        border-radius: 3px;
-        padding: 5px;
-        position: absolute;
-        z-index: 10;
-        bottom: 0%;
-        right: 5%;
-        transform: translateX(-50%);
-        opacity: 0;
-        transition: opacity 0.3s;
-        font-size: 0.8em;
-    }
-
-    @media only screen and (max-width: 1450px) {
-        .tooltip-container .tooltip-text {
-            right: -2%;
-        }
-    }
-
-    @media only screen and (max-width: 1200px) {
-        .tooltip-container .tooltip-text {
-            right: -30%;
-        }
-    }
-
-    @media only screen and (max-width: 768px) {
-        .tooltip-container .tooltip-text {
-            right: 15%;
-        }
-    }
-
-    @media only screen and (max-width: 500px) {
-        .tooltip-container .tooltip-text {
-            right: 1%;
-        }
-    }
-
-    @media only screen and (max-width: 400px) {
-        .tooltip-container .tooltip-text {
-            right: -20%;
-        }
-    }
-
-    .tooltip-container .tooltip-text::after {
-        content: "";
-    }
-
-    .tooltip-container:hover .tooltip-text {
-        visibility: visible;
-        opacity: 1;
-    } */
 
     #acled_month,
     #acled_year,
