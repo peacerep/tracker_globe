@@ -99,6 +99,7 @@
         agts = selected_country_details.total_agreements;
     }
 
+
     $: generateRectangles(agts);
     $: if (vis_width || agts) {
         generateRectangles(agts);
