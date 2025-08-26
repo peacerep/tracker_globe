@@ -25,4 +25,5 @@ yarn deploy
 
 ### Monthly update
 
-Replace agt_point_data.csv, country_data.csv, filled_polygon_data_5.csv, info_section.json with updated files.
+Replace 3 csv and 1 json file with monthly updates:
+agt_point_data.csv, country_data.csv, filled_polygon_data_5.csv, info_section.json
