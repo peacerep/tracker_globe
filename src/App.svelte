@@ -219,7 +219,7 @@
     <p id="loading_text">loading...</p>
   </div>
 
-  <h1 style="font-weight: 500;">PA-X Tracker Globe</h1>
+  <h1 style="font-weight: 300;">PA-X Tracker Globe</h1>
 
   <button id="tracker_button" on:click={openTracker} title="Go to PA-X Tracker">
     TRACKER
@@ -439,7 +439,7 @@
   h1 {
     border-radius: 2px;
     position: absolute;
-    font-weight: 400;
+    font-weight: 800;
     padding: 5px;
     top: -2px;
     font-size: 2em;
