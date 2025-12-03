@@ -27,5 +27,27 @@ yarn deploy
 
 ### Monthly update
 
-Replace 3 csv and 1 json file with monthly updates:
-agt_point_data.csv, country_data.csv, filled_polygon_data_5.csv, info_section.json
+1. Replace 3 csv and 1 json file in public/data with monthly updates:
+`agt_point_data.csv`, `country_data.csv`, `filled_polygon_data_5.csv`, `info_section.json`
+
+2. Check if all is good with:
+```bash
+	yarn dev
+```
+
+3. Build: 
+```bash
+	yarn build
+```
+
+4. Deploy:
+```bash
+	yarn deploy
+```
+
+5. Git:
+```bash
+git add .
+git commit -m "message"
+git push
+```
