@@ -4,26 +4,46 @@
 
 This is a [`Svelte`] project scaffolded with [`Vite`]. It includes a deployment setup using [`gh-pages`] to publish the built site to GitHub Pages.
 
-### Prerequisites
+### Prerequisites [for local install]
 
 - [`Node.js`] 
 - [`Yarn`] installed globally
 
 ### Installation
 
-yarn install
+#### Locally
+
+`yarn install`
+
+#### Docker
+`docker run --rm -it -v "${PWD}:/app" -w /app node:22 yarn install`
 
 ### Development
+#### Local
+`yarn dev` 
 
-yarn dev 
+#### Docker
+`docker run --rm -it -v "${PWD}:/app" -w /app -p 5173:5173 node:22 yarn dev --host 0.0.0.0`
+
+Open http://localhost:5173
 
 ### Build
 
-yarn build 
+#### Locally
+`yarn build`
+
+#### Docker 
+
+`docker run --rm -it -v "${PWD}:/app" -w /app node:22 yarn build`
 
 ### Deployment
 
-yarn deploy
+#### Local
+
+`yarn deploy`
+
+#### Docker
+`docker run --rm -it -v "${PWD}:/app" -w /app node:22 yarn deploy`
 
 ### Monthly update
 
@@ -51,3 +71,7 @@ git add .
 git commit -m "message"
 git push
 ```
+
+
+### Handy note
+- If need to update legend for year edit `src/App.svelte`
