@@ -4,6 +4,10 @@
 
 This is a [`Svelte`] project scaffolded with [`Vite`]. It includes a deployment setup using [`gh-pages`] to publish the built site to GitHub Pages.
 
+The result is the Tracker globe: https://peacerep.github.io/tracker_globe/ and also onrender version: https://globe-tracker.onrender.com/ 
+
+Both should get updated once deploy (see instructions below), but onrender may need a manual update if does not auto update. 
+
 ### Prerequisites [for local install]
 
 - [`Node.js`] 
@@ -75,3 +79,5 @@ git push
 
 ### Handy note
 - If need to update legend for year edit `src/App.svelte`
+- May need PAT from github to build and deploy (for the peacerep organisation - not personal account)
+
