@@ -27,7 +27,7 @@ Both should get updated once deploy (see instructions below), but onrender may n
 `yarn dev` 
 
 #### Docker
-`docker run --rm -it -v "${PWD}:/app" -w /app -p 5173:5173 node:22 yarn dev --host 0.0.0.0`
+`docker run --rm -it -v "${PWD}:/app" -w /app -p 5173:5173 node:22 sh -lc "yarn dev --host 0.0.0.0"`
 
 Open http://localhost:5173
 
