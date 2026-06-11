@@ -4,7 +4,7 @@
 
 This is a [`Svelte`] project scaffolded with [`Vite`]. It includes a deployment setup using [`gh-pages`] to publish the built site to GitHub Pages.
 
-The result is the Tracker globe: https://peacerep.github.io/tracker_globe/ and also onrender version: https://globe-tracker.onrender.com/ 
+The result is the Tracker globe: https://peacerep.github.io/tracker_globe/ and also onrender version: https://globe-tracker.onrender.com/  or https://pax-globe-tracker.onrender.com/ 
 
 Both should get updated once deploy (see instructions below), but onrender may need a manual update if does not auto update. 
 
